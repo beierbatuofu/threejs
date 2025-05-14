@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body,
+      html,
+      div,
+      canvas,
+      p,
+      span {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1;
+      }
+
+      body,
+      html {
+        overflow: hidden;
+        user-select: none;
+      }
+
+      .hours {
+        position: absolute;
+        top: 200px;
+        right: 10px;
+      }
+      .day {
+        position: absolute;
+        top: 170px;
+        right: 10px;
+      }
+
+      .month {
+        position: absolute;
+        top: 140px;
+        right: 10px;
+      }
+      .title {
+        position: absolute;
+        top: 110px;
+        right: 10px;
+      }
+      .info {
+        position: absolute;
+        top: 230px;
+        right: 10px;
+      }
+    </style>
+    <!-- <div class="title" id="title">title</div>
+    <div class="month">月<input type="range" id="month" min="1" max="12" /></div>
+    <div class="day">日<input type="range" id="day" min="1" /></div>
+    <div class="hours">时<input type="range" id="hours" /></div> -->
+    <div style="width: 100%; height: 100vh">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="sun_operation" style="position: absolute; top: 20px; right: 20px; z-index: 99; font-size: 14px; background: #fff; padding: 10px 10px 12px; border-radius: 5px">
+      <div style="padding: 5px 0" id="title"></div>
+      <div style="padding: 5px 0">月<input id="month" type="range" style="vertical-align: top" /></div>
+      <div style="padding: 5px 0">日<input id="day" type="range" style="vertical-align: top" /></div>
+      <div style="padding: 5px 0">时<input id="hour" type="range" style="vertical-align: top" /></div>
+      <div id="sunInfo"></div>
+    </div>
+  </body>
+</html>
